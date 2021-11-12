@@ -12,12 +12,10 @@ class Splash extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
-            child: Container(
-              child: Image(
-                width: 150,
-                height: 200,
-                image: AssetImage('assets/airtelLogo2.png'),
-              ),
+            child: Image(
+              width: 150,
+              height: 200,
+              image: AssetImage('assets/airtelLogo2.png'),
             ),
           ),
           SpinKitSpinningLines(color: Colors.white),

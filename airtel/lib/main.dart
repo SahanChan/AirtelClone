@@ -1,5 +1,7 @@
 // import 'package:airtel/routes.dart';
+import 'package:airtel/screens/EnterMobileNumber/enter_mobile.dart';
 import 'package:airtel/screens/Home/home.dart';
+import 'package:airtel/screens/OTP/one_time_password.dart';
 import 'package:airtel/screens/Splash/splash.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +19,7 @@ class AirtelApp extends StatelessWidget {
       title: 'Airtel Clone',
       // initialRoute: "/",
       // routes: routes,
-      home: Splash(),
+      home: OneTimePassword(),
     );
   }
 }
