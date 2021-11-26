@@ -9,7 +9,7 @@ class Menu extends StatefulWidget {
 }
 
 class _MenuState extends State<Menu> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 3;
 
   void _onItemTapped(int index) {
     setState(() {

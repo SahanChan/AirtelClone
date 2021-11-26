@@ -1,3 +1,5 @@
+import 'package:airtel/screens/EnterMobileNumber/enter_mobile.dart';
+
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -8,6 +10,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  _navigatetoEnterMobile() {
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => EnterMobile()));
+  }
+
   @override
   Widget build(BuildContext context) {
     List<bool> _selections = List.generate(3, (_) => false);
@@ -89,7 +96,7 @@ class _HomeState extends State<Home> {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  print('Get Started');
+                  _navigatetoEnterMobile();
                 },
                 child: Text(
                   "Get Started",

@@ -1,3 +1,4 @@
+import 'package:airtel/screens/Navigator/navigator_airtel.dart';
 import 'package:flutter/material.dart';
 
 class OneTimePassword extends StatefulWidget {
@@ -8,6 +9,11 @@ class OneTimePassword extends StatefulWidget {
 }
 
 class _OneTimePasswordState extends State<OneTimePassword> {
+  _navigatetoNavigator() {
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => NavigatorAirtel()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +53,7 @@ class _OneTimePasswordState extends State<OneTimePassword> {
               ),
               Center(
                 child: Text(
-                  'we sent a code to the 075-XXX-XXXX',
+                  'we sent a code to the 075-288-2600',
                   style: TextStyle(
                       color: Colors.grey[400], fontSize: 15, letterSpacing: 1),
                 ),
@@ -109,6 +115,7 @@ class _OneTimePasswordState extends State<OneTimePassword> {
                 child: ElevatedButton(
                   onPressed: () {
                     print('Continue');
+                    _navigatetoNavigator();
                   },
                   child: Text(
                     "Continue",
